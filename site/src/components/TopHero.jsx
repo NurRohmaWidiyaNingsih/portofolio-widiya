@@ -1,5 +1,6 @@
 import React from 'react'
 import heroBg from '../assets/hero-bg.jpeg'
+import cvFile from '../assets/CV - NUR ROHMA WIDIYA NINGSIH.pdf'
 
 export default function TopHero(){
   return (
@@ -22,7 +23,13 @@ export default function TopHero(){
           <p className="max-w-[720px] text-white/90 text-base mt-2 mx-auto leading-relaxed">I craft elegant, accessible interfaces and build tidy front-end code. I combine visual design with practical development to ship delightful, usable products.</p>
 
           <div className="mt-3 mb-2">
-            <a className="inline-flex items-center gap-2 px-5 py-3 rounded-lg font-bold text-white bg-gradient-to-r from-pink-400 to-pink-300 shadow-lg hover:shadow-xl transition-shadow" href="/assets/Rohma_Widiya_CV.pdf" download>Download CV</a>
+            <a 
+              className="inline-flex items-center gap-2 px-5 py-3 rounded-lg font-bold text-white bg-gradient-to-r from-pink-400 to-pink-300 shadow-lg hover:shadow-xl transition-shadow" 
+              href={cvFile} 
+              download="CV - NUR ROHMA WIDIYA NINGSIH.pdf"
+            >
+              Download CV
+            </a>
           </div>
 
           <div className="flex items-center justify-center gap-2 mt-2">

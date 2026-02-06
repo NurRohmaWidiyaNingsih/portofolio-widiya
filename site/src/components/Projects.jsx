@@ -94,21 +94,7 @@ const dataProjects = [
     tech: ['Python', 'Streamlit', 'Scikit-learn', 'PSO'],
     github: 'https://github.com/NurRohmaWidiyaNingsih/PrediksiHasilPanenPadiMadura',
   },
-  {
-    id: 3,
-    title: 'Sentiment Analysis',
-    category: 'NLP',
-    date: 'November 2025',
-    description: 'Analisis sentimen review produk menggunakan NLP.',
-    fullDescription: 'Sistem analisis sentimen otomatis untuk review produk e-commerce.',
-    images: [
-      'https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=800&q=80',
-      'https://images.unsplash.com/photo-1504868584819-f8e8b4b6d7e3?w=800&q=80',
-      'https://images.unsplash.com/photo-1518186285589-2f7649de83e0?w=800&q=80',
-    ],
-    tech: ['Python', 'NLTK', 'TensorFlow'],
-    github: 'https://github.com/username/sentiment-analysis',
-  },
+  
 ]
 
 function ProjectModal({ project, onClose }) {
