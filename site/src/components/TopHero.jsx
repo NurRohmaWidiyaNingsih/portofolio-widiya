@@ -6,7 +6,7 @@ export default function TopHero(){
   return (
     <header 
       id="home" 
-      className="relative pt-16 pb-4 text-white flex items-center justify-center bg-center bg-cover bg-no-repeat"
+      className="relative pt-32 pb-12 md:pt-40 text-white flex items-center justify-center bg-center bg-cover bg-no-repeat"
       style={{
         backgroundImage: `linear-gradient(rgba(63,51,80,0.85), rgba(63,51,80,0.85)), url(${heroBg})`
       }}
