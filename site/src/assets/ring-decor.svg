@@ -1,0 +1,108 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240" width="240" height="240">
+  <defs>
+    <linearGradient id="g" x1="0" x2="1">
+      <stop offset="0%" stop-color="#ff8cc0"/>
+      <stop offset="100%" stop-color="#ffd6e8"/>
+    </linearGradient>
+    <!-- a simple rose path to reuse -->
+    <g id="rose">
+      <path d="M0-6 C2-6 6-4 6-1 C6 2 2 4 0 4 C-2 4 -6 2 -6 -1 C-6 -4 -2 -6 0 -6 Z" fill="#ff7ab6"/>
+      <circle cx="0" cy="0" r="1.2" fill="#ff4f94" />
+    </g>
+  </defs>
+
+  <!-- outer soft ring -->
+  <circle cx="120" cy="120" r="102" fill="none" stroke="url(#g)" stroke-width="3" opacity="0.28"/>
+
+  <!-- dense roses arranged around the circle -->
+  <g transform="translate(120,120)">
+    <!-- generate 28 roses around the circle -->
+    <g id="roses">
+      <!-- repeated with rotation and slight scale variation -->
+      <g transform="rotate(0) translate(0,-110) scale(1)">
+        <use href="#rose" />
+      </g>
+      <g transform="rotate(13) translate(0,-110) scale(0.95)" opacity="0.98">
+        <use href="#rose" />
+      </g>
+      <g transform="rotate(26) translate(0,-110) scale(1.05)" opacity="0.98">
+        <use href="#rose" />
+      </g>
+      <g transform="rotate(39) translate(0,-110) scale(0.9)" opacity="0.96">
+        <use href="#rose" />
+      </g>
+      <g transform="rotate(52) translate(0,-110) scale(1)" opacity="0.98">
+        <use href="#rose" />
+      </g>
+      <g transform="rotate(65) translate(0,-110) scale(0.92)" opacity="0.97">
+        <use href="#rose" />
+      </g>
+      <g transform="rotate(78) translate(0,-110) scale(1.02)" opacity="0.98">
+        <use href="#rose" />
+      </g>
+      <g transform="rotate(91) translate(0,-110) scale(0.94)" opacity="0.96">
+        <use href="#rose" />
+      </g>
+      <g transform="rotate(104) translate(0,-110) scale(1.03)" opacity="0.98">
+        <use href="#rose" />
+      </g>
+      <g transform="rotate(117) translate(0,-110) scale(0.9)" opacity="0.95">
+        <use href="#rose" />
+      </g>
+      <g transform="rotate(130) translate(0,-110) scale(1)" opacity="0.98">
+        <use href="#rose" />
+      </g>
+      <g transform="rotate(143) translate(0,-110) scale(0.93)" opacity="0.97">
+        <use href="#rose" />
+      </g>
+      <g transform="rotate(156) translate(0,-110) scale(1.04)" opacity="0.98">
+        <use href="#rose" />
+      </g>
+      <g transform="rotate(169) translate(0,-110) scale(0.92)" opacity="0.96">
+        <use href="#rose" />
+      </g>
+      <g transform="rotate(182) translate(0,-110) scale(1.01)" opacity="0.98">
+        <use href="#rose" />
+      </g>
+      <g transform="rotate(195) translate(0,-110) scale(0.95)" opacity="0.97">
+        <use href="#rose" />
+      </g>
+      <g transform="rotate(208) translate(0,-110) scale(1.02)" opacity="0.98">
+        <use href="#rose" />
+      </g>
+      <g transform="rotate(221) translate(0,-110) scale(0.9)" opacity="0.95">
+        <use href="#rose" />
+      </g>
+      <g transform="rotate(234) translate(0,-110) scale(1)" opacity="0.98">
+        <use href="#rose" />
+      </g>
+      <g transform="rotate(247) translate(0,-110) scale(0.94)" opacity="0.97">
+        <use href="#rose" />
+      </g>
+      <g transform="rotate(260) translate(0,-110) scale(1.03)" opacity="0.98">
+        <use href="#rose" />
+      </g>
+      <g transform="rotate(273) translate(0,-110) scale(0.9)" opacity="0.96">
+        <use href="#rose" />
+      </g>
+      <g transform="rotate(286) translate(0,-110) scale(1)" opacity="0.98">
+        <use href="#rose" />
+      </g>
+      <g transform="rotate(299) translate(0,-110) scale(0.93)" opacity="0.97">
+        <use href="#rose" />
+      </g>
+      <g transform="rotate(312) translate(0,-110) scale(1.04)" opacity="0.98">
+        <use href="#rose" />
+      </g>
+      <g transform="rotate(325) translate(0,-110) scale(0.95)" opacity="0.96">
+        <use href="#rose" />
+      </g>
+      <g transform="rotate(338) translate(0,-110) scale(1.02)" opacity="0.98">
+        <use href="#rose" />
+      </g>
+    </g>
+  </g>
+
+  <!-- inner subtle ring to give shape -->
+  <circle cx="120" cy="120" r="78" fill="none" stroke="rgba(255,255,255,0.28)" stroke-width="6"/>
+</svg>

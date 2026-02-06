@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 260" width="360" height="260">
+  <defs>
+    <linearGradient id="rg" x1="0" x2="1">
+      <stop offset="0%" stop-color="#ff8cc0"/>
+      <stop offset="100%" stop-color="#ffd6e8"/>
+    </linearGradient>
+  </defs>
+
+  <!-- clean rounded rectangle (no flowers) -->
+  <rect x="12" y="12" width="336" height="236" rx="28" ry="28" fill="none" stroke="url(#rg)" stroke-width="6" opacity="0.38"/>
+
+  <!-- subtle inner decorative strokes -->
+  <rect x="28" y="28" width="304" height="200" rx="22" ry="22" fill="none" stroke="rgba(255,255,255,0.06)" stroke-width="4"/>
+
+  <!-- corner accents -->
+  <g fill="none" stroke="rgba(255,122,182,0.12)" stroke-width="6">
+    <path d="M28 60 Q16 36 28 28" />
+    <path d="M332 60 Q344 36 332 28" />
+    <path d="M28 200 Q16 224 28 236" />
+    <path d="M332 200 Q344 224 332 236" />
+  </g>
+</svg>

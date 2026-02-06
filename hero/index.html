@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Portofolio - Hero</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="hero">
+    <div class="bg-blobs" aria-hidden="true">
+      <div class="blob b1"></div>
+      <div class="blob b2"></div>
+      <div class="blob b3"></div>
+    </div>
+
+    <div class="container">
+      <section class="profile">
+        <div class="avatar-wrap">
+          <img src="avatar.svg" alt="Avatar" class="avatar">
+          <div class="ring"></div>
+        </div>
+
+        <div class="intro">
+          <h1 class="name">Nur Rohma Widiya Ningsih</h1>
+          <p class="role">Desainer & Developer - kreatif, rapi, dan penuh rasa ingin tahu.</p>
+
+          <p class="bio">Aku membuat produk digital yang berfokus pada UX dan estetika. Menggabungkan desain visual yang halus dengan kode yang bersih untuk membangun pengalaman yang berkesan.</p>
+
+          <div class="cta">
+            <a class="btn primary" href="#projects">Lihat Proyek</a>
+            <a class="btn ghost" href="#contact">Kontak</a>
+          </div>
+
+          <ul class="skills" aria-label="Teknologi yang digunakan">
+            <li>Figma</li>
+            <li>React</li>
+            <li>Tailwind</li>
+          </ul>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <script>
+    // small interaction: tilt avatar on mouse move
+    const avatarWrap = document.querySelector('.avatar-wrap');
+    avatarWrap.addEventListener('mousemove', (e) => {
+      const rect = avatarWrap.getBoundingClientRect();
+      const x = (e.clientX - rect.left) / rect.width - 0.5;
+      const y = (e.clientY - rect.top) / rect.height - 0.5;
+      avatarWrap.style.transform = `rotateX(${y * 8}deg) rotateY(${x * 10}deg)`;
+    });
+    avatarWrap.addEventListener('mouseleave', () => {
+      avatarWrap.style.transform = '';
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Base styles */
+html, body {
+  @apply m-0 p-0;
+}
+
+body {
+  font-family: Inter, ui-sans-serif, system-ui, Arial;
+  @apply text-white bg-[#3f3350];
+}
+
+/* Custom animations for decorative blobs */
+@keyframes blob1 {
+  0%, 100% { transform: translateY(0) rotate(0); }
+  50% { transform: translateY(20px) rotate(6deg); }
+}
+
+@keyframes blob2 {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-18px); }
+}
+
+@keyframes marquee {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0; transform: scale(0.95); }
+  100% { opacity: 1; transform: scale(1); }
+}
+
+/* Tailwind custom utilities */
+@layer utilities {
+  .animate-blob1 {
+    animation: blob1 10s ease-in-out infinite;
+  }
+  .animate-blob2 {
+    animation: blob2 12s ease-in-out infinite;
+  }
+  .animate-spin-slow {
+    animation: spin 20s linear infinite;
+  }
+  .animate-marquee {
+    animation: marquee 20s linear infinite;
+  }
+  
+  /* Hide scrollbar */
+  .scrollbar-hide {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none;
+  }
+}
